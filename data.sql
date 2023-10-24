@@ -1,15 +1,15 @@
 INSERT INTO ActivityType (ActivityTypeId, Name)
-VALUES (1, 'Кино'),
-       (2, 'Выставка'),
-       (3, 'Театр');
+VALUES (1, 'movie'),
+       (2, 'exhibition'),
+       (3, 'theater');
 
 INSERT INTO Activity (ActivityId, ParentId, ActivityTypeId, Name, AreaId)
-VALUES (1, NULL, 1, 'Фортуна', 1),
-       (2, 1, 2, 'Современное искуство', 2),
-       (3, 1, 2, 'Лебединое озеро', 3),
-       (4, 2, 1, 'Форсаж', 1),
-       (5, 2, 3, 'Ван Гог', 3),
-       (6, NULL, 3, 'Щелкунчик', 2);
+VALUES (1, NULL, 1, 'fortune', 1),
+       (2, 1, 2, 'modern art', 2),
+       (3, 1, 2, 'swan lake', 3),
+       (4, 2, 1, 'afterburner', 1),
+       (5, 2, 3, 'van Gogh', 3),
+       (6, NULL, 3, 'nutcracker', 2);
 
 INSERT INTO Program (ActivityId)
 VALUES (1),
